@@ -33,8 +33,9 @@ pipeline {
         stage('Data Request Portal') {
           stages {
             stage('Build CI Image') {
-              nextVersionFromGit()
+              
               steps {
+                nextVersionFromGit()
                 sh '''
                         echo "dockerbuild Data Request Portal with GIT COMMIT TAG: ${GIT_COMMIT} "
                         echo "**************************************"
