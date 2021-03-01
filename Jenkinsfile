@@ -39,7 +39,7 @@ pipeline {
                         echo "**************************************"
                         
                 '''
-                nextVersionFromGit(patch)
+                nextVersionFromGit()
               }
             }
             }
