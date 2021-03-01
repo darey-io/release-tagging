@@ -19,9 +19,8 @@ def nextVersionFromGit(scope) {
 }
 
 pipeline {
-  agent {
-        any
-  }
+  agent any
+  
 
   environment {
     GITLAB_HOST = "github.com"
